@@ -15,10 +15,20 @@
         align-items: center;
         justify-content: center;
       }
+      #fps {
+        white-space: pre;
+        font-family: monospace;
+      }
     </style>    
   </head>
   <body>
+    <div id="fps"></div>
+    <button id="new_empty">Create empty universe</button>
+    <button id="reset">Reset universe</button>
+    <button id="play-pause"></button>
+    <button id="step">Step universe</button>
     <canvas id="game-of-life-canvas"></canvas>
+    <input type="range" name="Step range" id="range" min="1" max="5">
     <script src="./bootstrap.js"></script>    
   </body>
 </html>
